@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+label {
+  color: #000 !important;
+}
+input {
+  color: #000 !important;
+}
