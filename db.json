@@ -1,3 +1,40 @@
 {
-  "clientes" : []
+  "clientes": [
+    {
+      "id": "afa5",
+      "nombre": "Juan",
+      "apellido": "Carly",
+      "email": "lal@lal.com",
+      "telefono": "818-212-2252",
+      "empresa": "Lala",
+      "puesto": "Lola"
+    },
+    {
+      "id": "2720",
+      "nombre": "Juan",
+      "apellido": "Carly",
+      "email": "lal@lal.com",
+      "telefono": "818-212-2252",
+      "empresa": "Lala",
+      "puesto": "Lola"
+    },
+    {
+      "id": "5519",
+      "nombre": "Juan",
+      "apellido": "Carly",
+      "email": "lal@lal.com",
+      "telefono": "818-212-2252",
+      "empresa": "Lala",
+      "puesto": "Lola"
+    },
+    {
+      "id": "30c1",
+      "nombre": "Juan",
+      "apellido": "Carlos",
+      "email": "lal@lal.com",
+      "telefono": "818-212-2252",
+      "empresa": "Lala",
+      "puesto": "Lola"
+    }
+  ]
 }
