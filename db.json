@@ -1,40 +1,40 @@
 {
   "clientes": [
     {
-      "id": "afa5",
-      "nombre": "Juan",
-      "apellido": "Carly",
-      "email": "lal@lal.com",
-      "telefono": "818-212-2252",
-      "empresa": "Lala",
-      "puesto": "Lola"
+      "id": "bf55",
+      "nombre": "Laura",
+      "apellido": "Bosque",
+      "email": "totopos15@loco.com",
+      "telefono": "818-525-5845",
+      "empresa": "Chillei",
+      "puesto": "Chile"
     },
     {
-      "id": "2720",
-      "nombre": "Juan",
-      "apellido": "Carly",
-      "email": "lal@lal.com",
-      "telefono": "818-212-2252",
-      "empresa": "Lala",
-      "puesto": "Lola"
+      "id": "f84b",
+      "nombre": "Lautaro",
+      "apellido": "Andante",
+      "email": "maiz@elote.com",
+      "telefono": "818-787-4587",
+      "empresa": "El totopo",
+      "puesto": "Totopo"
     },
     {
-      "id": "5519",
-      "nombre": "Juan",
-      "apellido": "Carly",
-      "email": "lal@lal.com",
-      "telefono": "818-212-2252",
-      "empresa": "Lala",
-      "puesto": "Lola"
+      "id": "4229",
+      "nombre": "Epura",
+      "apellido": "Impura",
+      "email": "tostada@locarlo.com",
+      "telefono": "889-854-1245",
+      "empresa": "La tostada",
+      "puesto": "Tostaad"
     },
     {
-      "id": "30c1",
-      "nombre": "Juan",
-      "apellido": "Carlos",
-      "email": "lal@lal.com",
-      "telefono": "818-212-2252",
-      "empresa": "Lala",
-      "puesto": "Lola"
+      "id": "4a4c",
+      "nombre": "Pelao",
+      "apellido": "Nuevo",
+      "email": "pelon12@pelones.com",
+      "telefono": "888-215-2025",
+      "empresa": "San Tostadon",
+      "puesto": "Tostadita"
     }
   ]
 }
