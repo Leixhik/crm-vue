@@ -14,11 +14,13 @@ defineProps({
 });
 
   const handleSubmit = (data) => {
-    axios.post("http://localhost:4000/clientes", data)
+  // data contiene todos los valores del formulario
+  // { nombre: "Juan", apellido: "Pérez", email: "..." }
+    axios.post("http://localhost:4000/clientes", data) //Les hace un POST hacia el endpoint
     .then(respuesta => {
       console.log(respuesta)
       // Redireccionar
-      router.push({ name: 'inicio'})
+      router.push({ name: 'listado-clientes'}) // te enruta de nuevo al listado-clientes
     })
     .catch(error => console.log(error))
   }
@@ -26,6 +28,7 @@ defineProps({
 
 <template>
   <div>
+    <!-- Todo el campo del form para agregar cliente  -->
     <div class="flex justify-end">
       <RouterLink to="listado-clientes"> Volver </RouterLink>
     </div>
@@ -104,3 +107,12 @@ defineProps({
   max-width: 100%;
 }
 </style>
+
+
+<!-- Usuario llena formulario
+      FormKit valida los campos
+      Si es válido -> @submit="handleSubmit"
+      axios.post() envía datos a JSON Server
+      JSON Server guarda en db.json
+      Redirección a la lista de clientes
+-->

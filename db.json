@@ -35,6 +35,33 @@
       "telefono": "888-215-2025",
       "empresa": "San Tostadon",
       "puesto": "Tostadita"
+    },
+    {
+      "id": "143b",
+      "nombre": "Angelon",
+      "apellido": "Poderoso",
+      "email": "angelpoderoso@poder.com",
+      "telefono": "818-848-2541",
+      "empresa": "DTI",
+      "puesto": "ITD"
+    },
+    {
+      "id": "8f85",
+      "nombre": "El Pelon",
+      "apellido": "Cara de Papa",
+      "email": "pelones1212@hot.com",
+      "telefono": "818-888-8774",
+      "empresa": "ITTTD",
+      "puesto": "DOOT"
+    },
+    {
+      "id": "05d8",
+      "nombre": "Habia",
+      "apellido": "Unavez",
+      "email": "enunpueblo@muylejano.com",
+      "telefono": "225-844-2653",
+      "empresa": "OITS",
+      "puesto": "IISTS"
     }
   ]
 }
