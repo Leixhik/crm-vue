@@ -1,7 +1,7 @@
 <script setup>
 import { FormKit } from "@formkit/vue";
 import { useRouter } from "vue-router";
-import axios from "../lib/axios";
+import ClienteService from "../services/ClienteService";
 import RouterLink from "@/components/UI/RouterLink.vue";
 import Heading from "@/components/UI/Heading.vue";
 
@@ -14,9 +14,10 @@ defineProps({
 });
 
   const handleSubmit = (data) => {
+    data.estado = 1
   // data contiene todos los valores del formulario
   // { nombre: "Juan", apellido: "Pérez", email: "..." }
-    axios.post("/clientes", data) //Les hace un POST hacia el endpoint
+    ClienteService.agregarCliente(data)
     .then(respuesta => {
       console.log(respuesta)
       // Redireccionar
