@@ -4,4 +4,4 @@ export default {
   obtenerClientes() {
     return api.get('/clientes')
   },
-}
+}   
