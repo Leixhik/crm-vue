@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted } from "vue";
+import { onMounted, reactive } from "vue";
 import { FormKit } from "@formkit/vue";
 import { useRouter, useRoute } from "vue-router";
 import ClienteService from "../services/ClienteService";
@@ -11,9 +11,25 @@ const route = useRoute()
 
 const { id } = route.params
 
+const formData = reactive({
+  nombre: '',
+  apellido: '',
+  email: '',
+  telefono: '',
+  empresa: '',
+  puesto: '',
+})
+
 onMounted(() => {
   ClienteService.obtenerCliente(id)
-  .then(({data}) => console.log(data))
+  .then(({data}) => {
+    formData.nombre = data.nombre
+    formData.apellido = data.apellido
+    formData.email = data.email
+    formData.telefono = data.telefono
+    formData.empresa = data.empresa
+    formData.puesto = data.puesto
+  })
   .catch(error => console.log(error))
 })
 
@@ -43,6 +59,7 @@ defineProps({
           submit-label="Agregar Cliente"
           incomplete-message="No se pudo enviar, revisa los mensajes"
           @submit="handleSubmit"
+          :value:="formData"
         >
           <FormKit
             type="text"
@@ -51,6 +68,7 @@ defineProps({
             placeholder="Nombre de Cliente"
             validation="required"
             :validation-messages="{ required: 'El nombre del cliente es obligatorio' }"
+            v-model="formData.nombre"
           />
 
           <FormKit
@@ -60,6 +78,7 @@ defineProps({
             placeholder="Apellido de Cliente"
             validation="required"
             :validation-messages="{ required: 'El apellido del cliente es obligatorio' }"
+            v-model="formData.apellido"
           />
 
           <FormKit
@@ -72,6 +91,7 @@ defineProps({
               required: 'El email del cliente es obligatorio',
               email: 'Coloca un email válido',
             }"
+            v-model="formData.email"
           />
 
           <FormKit
@@ -83,6 +103,7 @@ defineProps({
             :validation-messages="{
               matches: 'El Formato no es válido'
             }"
+            v-model="formData.telefono"
           />
 
           <FormKit
@@ -90,6 +111,7 @@ defineProps({
             name="empresa"
             label="Empresa"
             placeholder="Empresa de Cliente"
+            v-model="formData.empresa"
           />
 
           <FormKit
@@ -97,6 +119,7 @@ defineProps({
             name="puesto"
             label="Puesto"
             placeholder="Puesto de Cliente"
+            v-model="formData.puesto"
           />
         </FormKit>
       </div>
