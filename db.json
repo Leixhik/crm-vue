@@ -19,6 +19,16 @@
       "empresa": "Safa",
       "puesto": "Soofa",
       "estado": 0
+    },
+    {
+      "id": "1439",
+      "nombre": "Betocas",
+      "apellido": "Betaco",
+      "email": "elbeto@geto.com",
+      "telefono": "848-848-5154",
+      "empresa": "DTI",
+      "puesto": "FIMEÑO",
+      "estado": 1
     }
   ]
 }
