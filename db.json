@@ -28,16 +28,7 @@
       "telefono": "848-848-5154",
       "empresa": "DTI",
       "puesto": "FIMEÑO",
-      "estado": 1
-    },
-    {
-      "nombre": "Kike actualizado",
-      "apellido": "Kikoso",
-      "email": "kikin@kik.com",
-      "telefono": "818-484-9659",
-      "empresa": "FIME",
-      "puesto": "Fimeño",
-      "id": "77fa"
+      "estado": true
     }
   ]
 }
