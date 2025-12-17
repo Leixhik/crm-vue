@@ -2,13 +2,13 @@
   "clientes": [
     {
       "id": "c80f",
-      "nombre": "Paco",
-      "apellido": "Pancracio",
+      "nombre": "Pacote",
+      "apellido": "Pancracione",
       "email": "Pancracion@panco.com",
       "telefono": "115-154-5998",
       "empresa": "Pacosss",
       "puesto": "Paquitoss",
-      "estado": 1
+      "estado": true
     },
     {
       "id": "d5cc",
@@ -18,7 +18,7 @@
       "telefono": "884-487-8552",
       "empresa": "Safa",
       "puesto": "Soofa",
-      "estado": 0
+      "estado": true
     },
     {
       "id": "1439",
@@ -29,6 +29,15 @@
       "empresa": "DTI",
       "puesto": "FIMEÑO",
       "estado": 1
+    },
+    {
+      "nombre": "Kike actualizado",
+      "apellido": "Kikoso",
+      "email": "kikin@kik.com",
+      "telefono": "818-484-9659",
+      "empresa": "FIME",
+      "puesto": "Fimeño",
+      "id": "77fa"
     }
   ]
 }
